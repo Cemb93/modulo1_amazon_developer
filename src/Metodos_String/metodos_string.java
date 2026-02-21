@@ -11,7 +11,12 @@ public class metodos_string {
     String partFrom1To4 = text.substring(1, 4);
     String partFrom4To5 = text.substring(4, 6);
 
-    System.out.println("la longitud de: " + text + ", es " + length);
+    System.out.println("Texto: " + text +
+            " | Longitud: " + length +
+            " | Char(1): " + letter +
+            " | Sub(1,4): " + partFrom1To4 +
+            " | Sub(4,6): " + partFrom4To5
+    );
 
     String anotherText= "Adventure";
     // TODO: Compare text with anotherText using equals() and print the output
@@ -25,5 +30,13 @@ public class metodos_string {
     boolean hasBrooks = anotherText.contains("brooks");
     // TODO: Replace 'e' with 'a' and print the output
     String replaceLetters = anotherText.replace('e','a');
+
+    System.out.println("Iguales: " + result1 +
+            " | Upper: " + fruitInUpperCase +
+            " | Lower: " + fruitInLowerCase +
+            " | Contiene 'ture': " + hasTure +
+            " | Contiene 'brooks': " + hasBrooks +
+            " | Replace e→a: " + replaceLetters
+    );
   }
 }
